@@ -23,7 +23,6 @@ Guanlong Jiao<sup>1,3</sup>, Biqing Huang<sup>1</sup>, [Kuan-Chieh Wang](https:/
 <!-- <br>
 <h1> 📝 News </h1> -->
 
-<br>
 <h1> 💜 Overview </h1>
 <div class="columns is-centered">
     <div class="has-text-justified">
@@ -42,7 +41,6 @@ Guanlong Jiao<sup>1,3</sup>, Biqing Huang<sup>1</sup>, [Kuan-Chieh Wang](https:/
 </div>
 
 
-<br>
 <h1> ✨ Feature: Text-driven Image / Video Editing </h1>
 
 More results can be found in our project page.
@@ -100,7 +98,6 @@ More results can be found in our project page.
 </table>
 
 
-<br>
 <h1> 👨‍💻 Implementation </h1>
 
 Here we provide two implementation options:
@@ -108,14 +105,12 @@ Here we provide two implementation options:
 - [Implementation on official FLUX repository](./UniEdit-Flow_FLUX/README.md): Implementation based on original FLUX. The performance is slightly better than the diffusers-based FLUX pipeline.
 
 
-<br>
 <h1> 🔮 Acknowledgements </h1>
 
 We sincerely thank [FireFlow](https://github.com/HolmesShuan/FireFlow-Fast-Inversion-of-Rectified-Flow-for-Image-Semantic-Editing), [RF-Solver](https://github.com/wangjiangshan0725/RF-Solver-Edit), and [FLUX](https://github.com/black-forest-labs/flux) for their awesome work!
 Additionally, we would also like to thank [PnpInversion](https://github.com/cure-lab/PnPInversion) for providing comprehensive baseline survey and implementations, as well as their great benchmark.
 
 
-<br>
 <h1> 📑 Cite Us </h1>
 
 If you like our work, you can cite our paper through the bibtex below. Thank for your attention!
