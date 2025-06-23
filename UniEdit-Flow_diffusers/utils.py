@@ -25,7 +25,7 @@ def image2latent(pipe, image, device, dtype):
     # input image density range [-1, 1]
     latents = pipe.vae.encode(image)['latent_dist'].mean
     if pipe.vae.config.shift_factor is not None:
-        latents = latents * pipe.vae.config.scaling_factor + pipe.vae.config.shift_factor
+        latents = (latents - pipe.vae.config.shift_factor) * pipe.vae.config.scaling_factor
     else:
         latents = latents * pipe.vae.config.scaling_factor
     if hasattr(pipe, '_pack_latents'):
