@@ -19,6 +19,11 @@ if __name__ == '__main__':
     parser.add_argument("--save_folder", type=str)
     parser.add_argument("--prompt", type=str, default="")
     
+    # From stable flow (https://github.com/snap-research/stable-flow) .
+    # Multiplying the latent by a nudging scalar >= 1.15, fixes image reconstruction failures.
+    # Thanks for the kind advice of Ayan Kashyap (https://github.com/DSL-Lab/UniEdit-Flow/issues/4).
+    parser.add_argument("--latent_nudging_scalar", type=float, default=1.0, help='e.g., 1.15')
+
     parser.add_argument("--step", type=int, default=50, help='1~1000')
     parser.add_argument("--seed", default=8, type=int)
     parser.add_argument("--model_path", type=str, default="stabilityai/stable-diffusion-3-medium-diffusers")
@@ -53,7 +58,7 @@ if __name__ == '__main__':
     image = image.crop((0, 0, width, height))
     
     # AE encode & decode
-    image_latent = image2latent(pipe, image, device, torch_dtype)
+    image_latent = image2latent(pipe, image, device, torch_dtype) * args.latent_nudging_scalar
     decode_image = latent2image(pipe, image_latent, device, torch_dtype)
     decode_image.save(os.path.join(args.save_folder, 'input.png'))
     
