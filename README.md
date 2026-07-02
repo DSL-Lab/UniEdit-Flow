@@ -116,13 +116,11 @@ Additionally, we would also like to thank [PnpInversion](https://github.com/cure
 If you like our work, you can cite our paper through the bibtex below. Thank for your attention!
 
 ```bib
-@misc{jiao2025unieditflowunleashinginversionediting,
-    title={UniEdit-Flow: Unleashing Inversion and Editing in the Era of Flow Models}, 
-    author={Guanlong Jiao and Biqing Huang and Kuan-Chieh Wang and Renjie Liao},
-    year={2025},
-    eprint={2504.13109},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV},
-    url={https://arxiv.org/abs/2504.13109}, 
+@inproceedings{jiao2026unieditflow,
+	title={UniEdit-Flow: Unleashing Inversion and Editing in the Era of Flow Models},
+	author={Guanlong Jiao and Biqing Huang and Kuan-Chieh Jackson Wang and Renjie Liao},
+	booktitle={The Fourteenth International Conference on Learning Representations},
+	year={2026},
+	url={https://openreview.net/forum?id=ArU2CeB7Tm}
 }
 ```
